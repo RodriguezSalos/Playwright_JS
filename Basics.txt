@@ -1,0 +1,22 @@
+
+//base actions
+Open page:
+await page.togo(htpps://...);
+
+//enter text, click
+await page.getByPlacehodler('full Name').click().fill();
+
+//fill
+await androidDevice.fill(selector, text); //30s default wait time
+await androidDevice.fill(selector, text, options);
+
+await page.locator()
+
+//instruction from the keyboard
+await page.getByPlaceholder().press('tab');
+await page.getByPlaceholder().press('enter');
+
+//wait time
+const sleep = (ms) =>{
+    return new Promise((resolve) => setTimeout(resolve, ms));
+;}
